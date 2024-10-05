@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contacto - Portafolio de Sebastián Núñez">
+    <title>Sebastián Núñez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+.orange {
+  color: #caf438;
+}
+
+.form-container {
+  
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #001925;
+  padding: 30px;
+  border-left: 5px solid #caf438;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%
+  );
+}
+
+.heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.c1 {
+  display: block;
+  color: #d3f35f;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.c2 {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 90%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+
+
+.form-container .form .input:focus {
+  border-left: 5px solid #caf438;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color: #caf438;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #caf438;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 90%;
+  background: #caf438;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%
+  );
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 3px solid #ff7a01;
+  color: #caf438;
+}
+
+
+
+.form-container
+  .form
+  .button-container
+  .reset-button-container
+  .reset-button:hover {
+  background: #caf438;
+  color: #001925;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sebastián Núñez</h1>
+        </div>
+        <nav>
+            <a href="index.html">
+              <span class="material-symbols-outlined">home</span> Inicio
+            </a>
+            <a href="sobre-mi.html">
+              <span class="material-symbols-outlined">person</span> Sobre Mí
+            </a>
+            <a href="portfolio.html">
+              <span class="material-symbols-outlined">work</span> Portfolio
+            </a>
+            <a href="contacto.html"  class="active">
+              <span class="material-symbols-outlined">mail</span> Contacto
+            </a>
+          </nav>
+    </header>
+   
+
+    <div class="form-container">
+      <div class="form">
+        <span class="heading">Contactame</span>
+        <input class="input" type="text" placeholder="Nombre" />
+        <input class="input" type="text" placeholder="Telefono" />
+        <input class="input" type="text" placeholder="e-mail" />
+        <input class="input" type="text" placeholder="Mensaje" style="padding-bottom: 60px;" />
+        <span class="c2">Enviame un mensaje para saber en que te puedo ayudar</span>
+        <div class="button-container">
+          <div class="send-button">Enviar</div>
+          
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <small>&copy; 2024 Sebastián Núñez.</small>
+    </footer>
+</body>
+</html>

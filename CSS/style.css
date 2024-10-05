@@ -1,0 +1,335 @@
+/* --------------- FONDO DE PAGINA ---------------*/
+body {
+  font-family: "Kanit", sans-serif;
+  background: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------- ENCABEZADO Y MENU ---------------*/
+header {
+  border-bottom: 5px solid white;
+  background-color: #0D0D0D; /* Color oscuro de fondo */
+  box-shadow: 0px 0px 1px 1px rgba(255, 0, 150, 0.7),
+              0px 0px 2px 2px rgba(0, 255, 255, 0.7),
+              0px 0px 2.5px 2.5px rgba(0, 255, 117, 0.7); /* Sombra inicial */
+  position: sticky;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  transition: box-shadow 0.4s ease-in-out; /* Transición suave para el box-shadow */
+}
+
+header:hover {
+  box-shadow: 0px 0px 15px 3px rgba(255, 0, 150, 0.7),
+              0px 0px 25px 5px rgba(0, 255, 255, 0.7),
+              0px 0px 35px 7px rgba(0, 255, 117, 0.7); /* Sombra multicolor al hacer hover */
+}
+
+/* ------------------- SECCIONES -------------------*/
+section {
+
+  background-color: #0d0d0d80;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 1px;
+  width: auto; 
+  
+}
+
+#start {
+  position: relative;
+  top: 0;
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 3%; /* Asegúrate de que no haya margen inferior */
+  padding: 3%; /* Asegúrate de que no haya relleno */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  border-radius: 0;
+ 
+}
+
+
+/* --------------------- LOGO ---------------------*/
+.logo h1{
+  
+  background: linear-gradient(90deg, #ddd3d3, #b9b9b9, #F2F2F2, #afafaf, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 2em;
+  font-weight: 300;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* --------------------- HABILIDADES ---------------------*/
+#skills       { width: 80%; margin: 0 auto; text-align: left; margin-left: 0;}
+.progress     { height: 100%; line-height: 25px; text-align: center; border-radius: 10px;}
+.progress-bar { border-radius: 1px; overflow: hidden; height: 5px;}
+.skill  { margin-bottom: 10px; margin-left: 0;}
+.python { width: 80%; background-color: rgb(0, 126, 126);}
+.html   { width: 45%; background-color: rgb(0, 126, 126);}
+.css    { width: 30%; background-color: rgb(0, 126, 126);}
+.js     { width: 40%; background-color: rgb(0, 126, 126);}
+
+
+/* ------------------- ICONOS DEL MENU --------------------*/
+.material-symbols-outlined {
+  transition: color 0.3s ease;
+  vertical-align: middle;
+  margin-right: 0px;
+  font-size: 25px;
+  color: inherit;
+}
+nav a.active .material-symbols-outlined, 
+nav a:hover .material-symbols-outlined {
+  background: linear-gradient(to right, rgba(255, 0, 150, 0.7), rgba(0, 255, 255, 0.7), rgba(0, 255, 117, 0.7)); /* Degradado de fondo */
+  -webkit-background-clip: text; /* Clipa el degradado al texto */
+  -webkit-text-fill-color: transparent; /* Hace que el color del texto sea transparente para ver el degradado */
+}
+
+nav a:hover,
+nav a.active {
+  background: linear-gradient(to right, rgba(255, 0, 150, 0.7), rgba(0, 255, 255, 0.7), rgba(0, 255, 117, 0.7)); /* Degradado de fondo */
+  -webkit-background-clip: text; /* Clipa el degradado al texto */
+  -webkit-text-fill-color: transparent; /* Hace que el color del texto sea transparente para ver el degradado */
+}
+/* ------------------------ MENU -------------------------*/
+nav {
+  display: flex;
+  font-size: 30%;
+  gap: 20px;
+  justify-content: center; 
+  margin: 10px 0;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-family: "Play", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-optical-sizing: auto;
+  color: #e8e8e8;
+  font-size: 3.2em;
+  padding: 5px 0;
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición para la sombra del texto */
+}
+
+nav a.active {
+  transition: width 0.3s ease;
+  font-weight: 500;
+  color: #e8e8e8;
+}
+
+
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(255, 0, 150, 0.7), rgba(0, 255, 255, 0.7), rgba(0, 255, 117, 0.7)); /* Degradado multicolor */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a:focus::after,
+nav a.active::after {
+  width: 100%; /* La línea se expande completamente al hacer hover o cuando el enlace está activo */
+}
+
+
+/* ------------------------ TEXTO -------------------------*/
+
+
+#title {
+
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  margin-bottom: auto;
+  margin-top: 1%;
+  text-shadow: 2px 2px 5px #0000004d;
+}
+
+
+
+#paragraph {
+ 
+  color: white;
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+
+  
+}
+
+
+
+/*----------------BOTON DE SUBIR----------------*/
+
+html {
+  scroll-behavior: smooth; /* Hace que el desplazamiento sea suave */
+}
+
+.shadow__btn {
+  position: fixed; 
+  padding: 12px 12px;
+  border-radius: 50px;
+  bottom: 20px; /* A 20px desde la parte inferior */
+  right: 20px; /* A 20px desde la parte derecha */
+  color: #001925;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  z-index: 1000;
+}
+
+
+.shadow__btn {
+  background-color: #ffffff7e;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0px 0px 1px 3px rgba(255, 0, 150, 0.7),
+              0px 0px 2px 3px rgba(0, 255, 255, 0.7),
+              0px 0px 3px 3px rgba(0, 255, 117, 0.7);
+  background: #f5f5f5;
+}
+
+
+/* ------------------------ container -------------------------*/
+.container1 {
+  background-color: #ffffff00;
+  display: flex; 
+  justify-content: space-between; 
+  margin: 20px; 
+  margin-bottom: 3%; /* Asegúrate de que no haya margen inferior */
+  
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
+
+}
+
+.section1 {
+  flex: 0 0 65%; 
+  background-color: #212121;
+  margin-left: 0%;
+  padding-top: 3%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  
+}
+
+.section2 {
+  flex: 0 0 30%; 
+  background-color: #212121;
+  margin-right: 0%;
+  padding-top: 3%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  
+}
+
+.content {
+  overflow: hidden; 
+}
+
+/* From Uiverse.io by codebykay101 */ 
+/* From Uiverse.io by codebykay101 */ 
+.container {
+  background-color: #212121;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinea las tarjetas desde la parte superior */
+  margin-bottom: 3%; /* Asegúrate de que no haya margen inferior */
+  padding: 3%;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias líneas */
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, margin 0.3s ease; /* Transiciones para el efecto de hover */
+  border-radius: 10px;
+  margin: 15px; /* Ajusta el margen para que haya espacio entre las tarjetas */
+  backdrop-filter: blur(10px);
+}
+
+/* Efecto hover en la tarjeta activa */
+.container .glass:hover {
+  transform: scale(1.1) translateY(-10px); /* Aumenta el tamaño de la tarjeta activa y la levanta al hacer hover */
+  z-index: 1; /* Asegura que la tarjeta en hover esté encima de las demás */
+  
+  
+}
+
+
+/* Estilo adicional para el texto en la parte inferior de las tarjetas */
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+
+
+/* ------------------------ PIE DE PAGINA -------------------------*/
+footer {
+ 
+  border-top: 5px solid white;
+  background-color: #171717; /* Color oscuro de fondo */
+  position: relative;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  color: #e8e8e8;
+  font-family: "Play", sans-serif;
+ 
+ 
+}
